@@ -10,7 +10,8 @@ import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-it
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { RecipeDetailsComponent } from './recipes/recipe-details/recipe-details.component';
-
+import {FormsModule} from '@angular/forms';
+import { from } from 'rxjs';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { RecipeDetailsComponent } from './recipes/recipe-details/recipe-details.
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
