@@ -20,6 +20,9 @@ export class RecipeService{
       getRecipe(){
           return this.recipes.slice();
       }
+      getRecipeByIndex(index:number){
+        return this.recipes[index];
+      }
       addToSl(ingr:Ingredient[] ){
       this.sl.addToSl(ingr);
     }
