@@ -4,7 +4,7 @@ import { Ingredient } from '../shared/ingredient.model';
 import { ShoppingListService } from '../shopping-list/shopping-list.service';
 @Injectable()
 export class RecipeService{
-    recipeSelected=new EventEmitter<Recipe>();
+    //recipeSelected=new EventEmitter<Recipe>();
     recipes:Recipe[]=[
         new Recipe('Chilly Chicken','Some Test','https://live.staticflickr.com/5496/31479301445_cb53c0f4e9_b.jpg',[
             new Ingredient("Meat",1),
